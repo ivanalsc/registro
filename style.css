@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  font-family: "Lato", sans-serif;
+}
+header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 1rem;
+}
+header nav ul li {
+  margin-right: 1.2rem;
+  font-size: 1.2rem;
+}
+header nav ul a {
+  text-decoration: none;
+  color: #ff637d;
+  font-weight: bold;
+}
+
+header nav ul li:hover,
+header nav ul li:active {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #ff637d;
+  color: #ff637d;
+}
+.logo {
+  margin-left: 1rem;
+}
+.logo i {
+  font-size: 2rem;
+}
+main {
+  display: flex;
+  margin: 0 auto;
+}
+section {
+  width: 50%;
+  margin-top: 2rem;
+}
+h1 {
+  font-size: 2rem;
+}
+.form {
+  margin-left: 4rem;
+  width: 70%;
+  text-align: center;
+}
+.form-item {
+  text-align: left;
+  width: 90%;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+.form-item label {
+  font-weight: bold;
+}
+.form-item input {
+  width: 100%;
+  height: 2rem;
+  margin-top: 1rem;
+  border: none;
+  border-bottom: 2px solid #ff637d;
+}
+.form-item input:focus {
+  outline-color: #ff637d;
+}
+.imagen {
+  margin-top: 0;
+}
+.imagen img {
+  width: 700px;
+}
+.dot {
+  font-size: 4rem;
+  color: #ff637d;
+}
+.registro {
+  width: 80%;
+  background-color: #ff637d;
+  height: 3rem;
+  border-radius: 15px;
+  align-self: center;
+  margin-top: 3rem;
+  color: white;
+  font-family: inherit;
+  font-size: 1.5rem;
+  border: none;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.registro:hover,
+.registri:active {
+  color: #ff637d;
+  background-color: white;
+  border: 3px solid #ff637d;
+}
+p {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+}
+p a {
+  color: #ff637d;
+}
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+}
+footer a {
+  color: black;
+}
+@media (max-width: 600px) {
+  nav ul li {
+    color: #ff637d;
+    border-bottom: 2px solid #ff637d;
+    font-size: 0.8rem;
+  }
+  nav ul li a:active {
+    font-size: 1rem;
+  }
+  .imagen {
+    display: none;
+  }
+  .form {
+    width: 100%;
+    margin: 1rem;
+    padding-left: 0;
+    padding: 1rem;
+  }
+  .form-item {
+    margin-left: 1rem;
+  }
+  footer {
+    margin-top: 2rem;
+  }
+}
