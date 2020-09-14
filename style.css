@@ -5,6 +5,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.mensaje-error {
+  border: 2px solid red;
+  color: red;
+  height: 2rem;
+  margin-top: 1.5rem;
+  padding: 2rem;
+  padding-bottom: 2.5rem;
+}
+.registrando {
+  border: 2px solid #ff637d;
+  color: #ff637d;
+  height: 2rem;
+  margin-top: 1.5rem;
+  padding: 2rem;
+  padding-bottom: 2.5rem;
+}
 .container {
   width: 100%;
   max-width: 1200px;
