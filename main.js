@@ -30,28 +30,28 @@ function iniciarApp() {
 
 function validarForm(e) {
   if (e.target.value.length > 0) {
-    const error = document.querySelector("p.error");
+    const error = document.querySelector(".mensaje-error");
     if (error) {
       error.remove();
     }
 
-    e.target.style.borderoBottomColor = "green";
+    e.target.style.borderBottomColor = "green";
   } else {
-    e.target.style.borderoBottomColor = "red";
+    e.target.style.borderBottomColor = "red";
 
     mostrarError("Todos los campos son obligatorios.");
   }
 
   if (e.target.type === "email") {
     if (er.test(e.target.value)) {
-      const error = document.querySelector("p.error");
+      const error = document.querySelector(".mensaje-error");
       if (error) {
         error.remove();
       }
 
-      e.target.style.borderoBottomColor = "green";
+      e.target.style.borderBottomColor = "green";
     } else {
-      e.target.style.borderoBottomColor = "red";
+      e.target.style.borderBottomColor = "red";
 
       mostrarError("El email no está escrito correctamente.");
     }
@@ -68,7 +68,7 @@ function mostrarError(mensaje) {
   mensajeError.textContent = mensaje;
   mensajeError.classList.add("mensaje-error");
 
-  const errores = document.querySelectorAll(".error");
+  const errores = document.querySelectorAll(".mensaje-error");
 
   if (errores.length === 0) {
     form.appendChild(mensajeError);
@@ -86,5 +86,7 @@ function enviarMail(e) {
     nombre.value = "";
     email.value = "";
     registrando.textContent = "Se registró correctamente 😀👍";
+    nombre.style.borderBottomColor = "#ff637d";
+    email.style.borderBottomColor = "#ff637d";
   }, 3000);
 }
